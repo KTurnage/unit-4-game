@@ -1,10 +1,17 @@
+
+
 #crystals {
     width: 200px;
     height: 200px;
 }
 
-#bakcground {
+/* #background {
     width: 100%;
-    height: 100%;
-
+    height: auto;
+    position: relative;
+    z-index: -50;
 }
+
+#number-to-guess {
+    text-align: center;
+} */

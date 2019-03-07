@@ -8,9 +8,10 @@
     <title>Crystal Collector</title>
 
     <!-- insert reset.css, style.css and links -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="javascript" href="game.js>">
+    <link rel="javascript" href="assets/game.js>">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
@@ -18,27 +19,74 @@
 <body>
 
     <!-- background image -->
-    <div id="background">
-        <img class="background" src="assets/images/crystals-background.jpeg">
+
+
+
+    <div class="jumbotron">
+        <h1 class="display-4">Crystal Collector!</h1>
+        <p class="lead">You will be given a random number at the start of the game. <br><br> There are 4 crystals below.
+            By
+            clicking on a crystal you will add a specific amount of points to your total score. <br><br> You win the
+            game by
+            matching our total score to the random number. You lose the game if your total score goes above the random
+            number. <br><br> The value of each crystal is hidden from you until you click on it. <br><br> Each time the
+            game
+            starts, the value of each crystal will change.</p>
+        <!-- <hr class="my-4">
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+    <div container>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header">Target Number</h5>
+                    <div class="card-body">
+                        <h5 id="number-to-guess"></h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header">Current Score</h5>
+                    <div class="card-body">
+                        <h5 id="current-score"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header">WINS</h5>
+                    <div class="card-body">
+                        <h5 id="wins"></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <h5 class="card-header">LOSSES</h5>
+                    <div class="card-body">
+                        <h5 id="losses"></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
 
     </div>
 
-    <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-    <h2>Current Score: <span id="current-score"></span></h2>
-    <h2>Wins <span id="wins"></span></h2>
-    <h2>Losses <span id="losses"></span></h2>
-    <!-- crysal images go here -->
+
     <div id="crystals">
-        <img class="crystal-image1" src="assets/images/black-crystal.jpeg" alt="black-crystal">
-        <img class="crystal-image2" src="assets/images/blue-crystal.jpeg" alt="blue-crystal">
-        <img class="crystal-image3" src="assets/images/purple-crystal.jpeg" alt="purple-crystal">
-        <img class="crystal-image4" src="assets/images/white-crystal.jpeg" alt="white-crystal">
+        
+
     </div>
 
-    <!-- jquery script link -->
+    <!-- script links -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!-- Lastly we removed our "alert" -->
     <script type="text/javascript" src="assets/game.js">
     </script>
 </body>
