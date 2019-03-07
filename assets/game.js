@@ -9,7 +9,7 @@ var losses = 0;
 function startGame() {
     for (var i = 0; i < crystalArray.length; i++) {
         var crystalImage = $("<img>");
-        crystalImage.addClass("crystal-image")
+        crystalImage.addClass("crystal-image col-md-3")
         crystalImage.attr("src", crystalArray[i].crystal)
         crystalArray[i].score = Math.floor(Math.random() * 12) + 1
         crystalImage.attr("data-randomNum", crystalArray[i].score);
