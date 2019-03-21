@@ -2,7 +2,9 @@
 Each crystal is randomly assigned a value. Try to figure out what each value is to collect the correct number to match the target score.
 
 ## Getting Started
-//link to deployed site
+[live link](https://kturnage.github.io/unit-4-game/)
+
+[link to repository](https://github.com/KTurnage/unit-4-game)
 
 ### Prerequisites
 n/a
